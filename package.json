@@ -1,0 +1,20 @@
+{
+  "name": "proxy-Calvin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "nodemon server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "http-proxy-middleware": "^0.19.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
