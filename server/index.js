@@ -15,12 +15,12 @@ app.use('/', express.static(path.resolve(__dirname, "../public")))
 
 //proxing requests from index.html
 app.use('/restaurants', proxy ({
- target:'http://localhost:4000',
+ target:'http://[::1]:4000',
  router: {
 //    '/nav_intro': 'http://localhost:3001',
-//    '/time_sponsored': 'http://localhost:3002',
-   '/menu_cart': 'http://localhost:3100',
-   // '/reviews_footer': 'http://localhost:3004',
+   '/time_sponsored': 'https://time-sponsored.herokuapp.com',
+   '/menu_cart': 'https://menu-cart.herokuapp.com',
+   '/reviews_footer': 'https://reviews-footer.herokuapp.com',
  },
  changeOrigin: true
 }))
