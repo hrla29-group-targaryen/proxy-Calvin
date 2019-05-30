@@ -15,7 +15,7 @@ app.use('/', express.static(path.resolve(__dirname, "../public")))
 
 //proxing requests from index.html
 app.use('/restaurants', proxy ({
- target:'http://[::1]:4000',
+ target:'https://grubhub-mock-calvin.herokuapp.com/',
  router: {
    '/nav_intro': 'https://nav-about.herokuapp.com',
    '/time_sponsored': 'https://time-sponsored.herokuapp.com',
