@@ -17,7 +17,7 @@ app.use('/', express.static(path.resolve(__dirname, "../public")))
 app.use('/restaurants', proxy ({
  target:'http://[::1]:4000',
  router: {
-//    '/nav_intro': 'http://localhost:3001',
+   '/nav_intro': 'https://nav-about.herokuapp.com',
    '/time_sponsored': 'https://time-sponsored.herokuapp.com',
    '/menu_cart': 'https://menu-cart.herokuapp.com',
    '/reviews_footer': 'https://reviews-footer.herokuapp.com',
